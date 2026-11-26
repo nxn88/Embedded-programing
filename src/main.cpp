@@ -1,4 +1,5 @@
 #include <Arduino.h>
+<<<<<<< HEAD
  int led[]={6,7,8,9,10,11,12,13};
 int digit[]={5,4,3,2};
 int i=0;
@@ -21,6 +22,29 @@ void setup()
   pinMode(digit[1], OUTPUT);
   pinMode(digit[2], OUTPUT);
   pinMode(digit[3], OUTPUT);
+=======
+
+int led1 = 13;
+int led2 = 12;
+int sw1 = 2;
+bool sw_state=0,last_sw_state,buttonstate=1,change=0;
+bool state=0;
+unsigned long time1;
+int debounceDelay=40;
+bool LED1State=0;
+unsigned long delayTime1;
+unsigned long delayA0;
+//prototype
+void checkSW();
+void setup() 
+{
+  pinMode(led1,OUTPUT);  
+  pinMode(led2,OUTPUT); 
+  pinMode(6,OUTPUT); 
+  pinMode(10,OUTPUT);
+  pinMode(13,OUTPUT);
+  pinMode(sw1,INPUT_PULLUP);  
+>>>>>>> 3255543586ad25bd55b840e2401187086f739e74
   Serial.begin(115200);
 }
 

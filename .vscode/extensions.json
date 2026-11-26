@@ -5,6 +5,11 @@
         "platformio.platformio-ide"
     ],
     "unwantedRecommendations": [
+<<<<<<< HEAD
         "ms-vscode.cpptools-extension-pack"
+=======
+        "ms-vscode.cpptools-extension-pack",
+        "pioarduino.pioarduino-ide"
+>>>>>>> 3255543586ad25bd55b840e2401187086f739e74
     ]
 }
